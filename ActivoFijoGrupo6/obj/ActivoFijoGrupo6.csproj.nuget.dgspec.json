@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\belen.arizaga\\source\\Workspaces\\Patrones\\ActivoFijoGrupo6\\ActivoFijoGrupo6\\ActivoFijoGrupo6.csproj": {}
+    "D:\\GitHub\\PatronBuilder\\ActivoFijoGrupo6\\ActivoFijoGrupo6.csproj": {}
   },
   "projects": {
-    "C:\\Users\\belen.arizaga\\source\\Workspaces\\Patrones\\ActivoFijoGrupo6\\ActivoFijoGrupo6\\ActivoFijoGrupo6.csproj": {
+    "D:\\GitHub\\PatronBuilder\\ActivoFijoGrupo6\\ActivoFijoGrupo6.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\belen.arizaga\\source\\Workspaces\\Patrones\\ActivoFijoGrupo6\\ActivoFijoGrupo6\\ActivoFijoGrupo6.csproj",
+        "projectUniqueName": "D:\\GitHub\\PatronBuilder\\ActivoFijoGrupo6\\ActivoFijoGrupo6.csproj",
         "projectName": "ActivoFijoGrupo6",
-        "projectPath": "C:\\Users\\belen.arizaga\\source\\Workspaces\\Patrones\\ActivoFijoGrupo6\\ActivoFijoGrupo6\\ActivoFijoGrupo6.csproj",
+        "projectPath": "D:\\GitHub\\PatronBuilder\\ActivoFijoGrupo6\\ActivoFijoGrupo6.csproj",
         "packagesPath": "C:\\Users\\belen.arizaga\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\belen.arizaga\\source\\Workspaces\\Patrones\\ActivoFijoGrupo6\\ActivoFijoGrupo6\\obj\\",
+        "outputPath": "D:\\GitHub\\PatronBuilder\\ActivoFijoGrupo6\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\belen.arizaga\\AppData\\Roaming\\NuGet\\NuGet.Config",

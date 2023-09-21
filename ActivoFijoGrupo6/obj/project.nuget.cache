@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5TQc3rrRHHxHEKMTRlwPyYSMm5uMNSaoFSLZ4N4W3atxJW5TJs9Z8WukFda63oxhQP07F2vbFkWbYDsS4zpw5g==",
+  "dgSpecHash": "CiFJCdxklWXni0X34WSD+OHzqFFnNAQkT+WJ5dVvV3grpaNCksa7Tl5dfuLNoRefu+6JSdY9h1OyZ4Kd0rWWTQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\belen.arizaga\\source\\Workspaces\\Patrones\\ActivoFijoGrupo6\\ActivoFijoGrupo6\\ActivoFijoGrupo6.csproj",
+  "projectFilePath": "D:\\GitHub\\PatronBuilder\\ActivoFijoGrupo6\\ActivoFijoGrupo6.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\belen.arizaga\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\belen.arizaga\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

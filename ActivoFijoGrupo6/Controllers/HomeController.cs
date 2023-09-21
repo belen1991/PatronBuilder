@@ -74,11 +74,6 @@ namespace ActivoFijoGrupo6.Controllers
             return View();
         }
     
-        public IActionResult ActivoFijoList()
-        {
-            return View(_activosFijoslList);
-        }
-
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
