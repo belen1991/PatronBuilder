@@ -1,0 +1,54 @@
+﻿@model IEnumerable<ActivoFijoGrupo6.Models.ActivoFijoModel>
+
+@{
+    ViewData["Title"] = "ActivoFijoList";
+}
+
+<h1>ActivoFijoList</h1>
+
+<p>
+  <a asp-action="ActivoFijo">Create New</a>
+</p>
+<table class="table">
+  <thead>
+    <tr>
+      <th>
+                @Html.DisplayNameFor(model => model.Codigo)
+      </th>
+      <th>
+                @Html.DisplayNameFor(model => model.Nombres)
+      </th>
+      <th>
+                @Html.DisplayNameFor(model => model.Precio)
+      </th>
+      <th>
+                @Html.DisplayNameFor(model => model.Atributos)
+      </th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+          <td>
+                    @Html.DisplayFor(modelItem => item.Codigo)
+          </td>
+          <td>
+                    @Html.DisplayFor(modelItem => item.Nombres)
+          </td>
+          <td>
+                    @Html.DisplayFor(modelItem => item.Precio)
+          </td>
+          <td>
+            <ul>
+                @foreach (var atributo in item.Atributos)
+                {
+                  <li>@atributo.Nombre: @atributo.Valor</li>
+                }
+            </ul>
+          </td>
+        </tr>
+        }
+  </tbody>
+</table>

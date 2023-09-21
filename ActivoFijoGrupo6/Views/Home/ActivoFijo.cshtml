@@ -1,0 +1,96 @@
+﻿@{
+    ViewData["Title"] = "Crear Activo Fijo";
+}
+
+<h1>View</h1>
+
+<h4>ActivoFijoModel</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post" asp-page="/Home/ActivoFijo" onsubmit="return validateForm()">
+            <div class="form-group">
+                <label for="Codigo">Código</label>
+                <input type="text" id="Codigo" name="Codigo" class="form-control" />
+                <span id="codigoError" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label for="Nombres">Nombres</label>
+                <input type="text" id="Nombres" name="Nombres" class="form-control" />
+                <span id="nombresError" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label for="Precio">Precio</label>
+                <input type="text" id="Precio" name="Precio" class="form-control" />
+                <span id="precioError" class="text-danger"></span>
+            </div>
+    
+            <h4>Atributos</h4>
+            <div id="atributos-container">
+                <!-- Here, you can dynamically add attribute input fields using JavaScript -->
+            </div>
+            <div>
+              <button type="button" id="add-atributo" class="btn btn-primary">Agregar Atributo</button>
+            </div>
+            <div>
+              <button type="submit" class="btn btn-success">Guardar</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Ir al listado</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <script>
+        function validateForm() {
+            var codigo = document.getElementById("Codigo").value;
+            var nombres = document.getElementById("Nombres").value;
+            var precio = document.getElementById("Precio").value;
+
+            var codigoError = document.getElementById("codigoError");
+            var nombresError = document.getElementById("nombresError");
+            var precioError = document.getElementById("precioError");
+
+            codigoError.innerHTML = "";
+            nombresError.innerHTML = "";
+            precioError.innerHTML = "";
+
+            if (codigo.trim() === "") {
+                codigoError.innerHTML = "Código es obligatorio";
+                return false;
+            }
+
+            if (nombres.trim() === "") {
+                nombresError.innerHTML = "Nombres es obligatorio";
+                return false;
+            }
+
+            if (precio.trim() === "") {
+                precioError.innerHTML = "Precio es obligatorio";
+                return false;
+            }
+
+            return true;
+        }
+        $(function () {
+            $('#add-atributo').click(function () {
+                var index = $('#atributos-container .atributo-item').length;
+                var newItem = `
+                    <div class="form-group atributo-item">
+                        <label for="Atributos[${index}].Nombre">Nombre Atributo ${index + 1}</label>
+                        <input type="text" id="Atributos[${index}].Nombre" name="Atributos[${index}].Nombre" class="form-control" />
+                        <label for="Atributos[${index}].Valor">Valor Atributo ${index + 1}</label>
+                        <input type="text" id="Atributos[${index}].Valor" name="Atributos[${index}].Valor" class="form-control" />
+                    </div>`;
+                $('#atributos-container').append(newItem);
+                if(index==4){
+                  document.querySelector('#add-atributo').disabled = true;
+                }
+            });
+        });
+    </script>
+}

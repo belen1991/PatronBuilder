@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\ActivoFijoGrupo6.props" />
+</Project>
